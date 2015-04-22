@@ -49,6 +49,12 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.9.1.1)
+    collection_json_rails (0.4.0)
+      actionpack (~> 4.0)
+      collection_json_serializer (~> 0.4)
+      railties (~> 4.0)
+    collection_json_serializer (0.4.1)
+      activesupport (~> 4.1)
     columnize (0.9.0)
     debug_inspector (0.0.2)
     erubis (2.7.0)
@@ -144,6 +150,7 @@ PLATFORMS
 DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
+  collection_json_rails
   jbuilder (~> 2.0)
   jquery-rails
   pg
