@@ -43,4 +43,4 @@ group :development, :test do
   gem 'spring'
 end
 
-gem 'collection_json_rails'
+gem 'collection_json_rails', '0.4.2'

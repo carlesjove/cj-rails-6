@@ -7,11 +7,10 @@ class BooksController < ApplicationController
   # GET /books.json
   def index
     @books = Book.all
-    serializer = BookSerializer.new @books
-    collection = CollectionJson::Serializer::Builder.new serializer
+
     respond_to do |format|
       format.html
-      format.json { render json: collection.pack, status: :ok }
+      format.json { render json: @books, serializer: BookSerializer, status: :ok }
     end
   end
 
